@@ -1,4 +1,4 @@
-import os
+حimport os
 import sys
 from datetime import datetime
 from time import time
@@ -30,10 +30,10 @@ async def restart(client, m: Message):
     await loli.edit("7")
     await loli.edit("8")
     await loli.edit("9")
-    await loli.edit("**✅ تم اعاده تشغيل موسيقى تليثون**")
+    await loli.edit("**✅ تم اعاده تشغيل سورس لوتس**")
     os.execl(sys.executable, sys.executable, *sys.argv)
     quit()
-@Client.on_message(filters.command(["اوامر الاغاني"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["الاوامر"], prefixes=f"{HNDLR}"))
 async def help(client, m: Message):
     await m.delete()
     HELP = f"""
